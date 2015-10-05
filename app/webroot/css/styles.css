@@ -1,0 +1,17 @@
+#ScrollToTop {
+  display: none;
+}
+.panel-heading.toggle {
+  cursor: pointer;
+}
+.panel-title.toggle:after {
+  /* symbol for "opening" panels */
+  font-family: 'Glyphicons Halflings'; /* essential for enabling glyphicon */
+  content: "\e113"; /* adjust as needed, taken from bootstrap.css */
+  float: right; /* adjust as needed */
+  /* color: grey; */ /* adjust as needed */
+}
+.panel-title.toggle.collapsed:after {
+  /* symbol for "collapsed" panels */
+  content: "\e114"; /* adjust as needed, taken from bootstrap.css */
+}
