@@ -21,52 +21,51 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <!DOCTYPE html>
 <html>
 <head>
-    <?php echo $this->Html->charset(); ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        CakePHP Forum
-    </title>
-    <?php
-        echo $this->Html->meta('icon');
-        echo $this->Html->script('jquery-1.9.1');
-        echo $this->Html->css('bootstrap.min');
-        echo $this->Html->css('styles');
-        echo $this->fetch('meta');
-        echo $this->fetch('css');
-        echo $this->fetch('script');
-    ?>
+  <?php echo $this->Html->charset(); ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CakePHP Forum</title>
+  <?php
+    echo $this->Html->meta('icon');
+    echo $this->Html->script('jquery-1.9.1');
+    echo $this->Html->css('bootstrap');
+    echo $this->Html->css('bootstrap.min');
+    echo $this->Html->css('styles');
+    echo $this->fetch('meta');
+    echo $this->fetch('css');
+    echo $this->fetch('script');
+  ?>
 </head>
 <body>
-    <div class="container">
-		<div id="header">
-			<?php echo $this->element('navigation'); ?>
-		</div>
-		
-		<div id="content">
-			<?php echo $this->Session->flash(); ?>
-			<?php echo $this->fetch('content'); ?>
-		</div>
+  <div class="container">
+	<div id="header">
+		<?php echo $this->element('navigation'); ?>
+	</div>
 
-		<div id="footer">
-			<p class="text-muted text-center">
-				Copyright &copy; 2015 <a href="http://www.github.com/umamscarlet" target="_blank">Muhammad Khoirul Umam</a>
-				 - Built with <?php echo $cakeVersion; ?>
-			</p>
-				
-			<p id="ScrollToTop" class="text-center">
-			<button type="button" class="btn btn-xs btn-primary" id="scroll-to-top" title="Scroll to Top">
-				<span class="glyphicon glyphicon-chevron-up"></span>
-			</button>
-			</p>
-		</div>
-       
-    </div> <!-- /container -->
-    
-    <!-- Bootstrap core JavaScript, placed at the end of the document so the pages load faster -->
-    <?php echo $this->Html->script('jquery-1.10.2.min'); ?>
-    <?php echo $this->Html->script('bootstrap.min'); ?>
-    
-    <script type="text/javascript">
+	<div id="content">
+		<?php echo $this->Session->flash(); ?>
+		<?php echo $this->fetch('content'); ?>
+	</div>
+
+	<div id="footer">
+		<p class="text-muted text-center">
+			Copyright &copy; 2015 <a href="http://www.github.com/umamscarlet" target="_blank">Muhammad Khoirul Umam</a>
+				 - Powered by <?php echo $cakeVersion; ?>
+		</p>
+
+		<p id="ScrollToTop" class="text-center">
+		<button type="button" class="btn btn-xs btn-primary" id="scroll-to-top" title="Scroll to Top">
+			<span class="glyphicon glyphicon-chevron-up"></span>
+		</button>
+		</p>
+	</div>
+
+  </div> <!-- /container -->
+
+  <!-- Bootstrap core JavaScript, placed at the end of the document so the pages load faster -->
+  <?php echo $this->Html->script('jquery-1.10.2.min'); ?>
+  <?php echo $this->Html->script('bootstrap.min'); ?>
+
+  <script type="text/javascript">
 		$(function() {
 			$(window).scroll(function() {
 				if($(this).scrollTop() > 100) {
@@ -83,6 +82,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 				return false;
 			});
 		});
-	</script>
+  </script>
 </body>
 </html>

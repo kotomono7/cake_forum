@@ -7,30 +7,30 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class UsersController extends AppController {
-	
+
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// $this->Auth->allow();
 	}
-	
-	// initialize ACO for each groups
+
+	// initialize ACL for each groups
 	public function initDB() {
 		$group = $this->User->Group;
-		
+
 		// Allow admin to everything
 		$group->id = 1;
 		$this->Acl->allow($group, 'controllers');
-		
+
 		// allow member to forums, topics and post
 		$group->id = 2;
 		$this->Acl->deny($group, 'controllers');
 		$this->Acl->allow($group, 'controllers/Forums');
 		$this->Acl->allow($group, 'controllers/Topics');
 		$this->Acl->allow($group, 'controllers/Posts');
-		
+
 		// allow basic users to log out
 		$this->Acl->allow($group, 'controllers/Users/logout');
-		
+
 		// add an exit to avoid an ugly "missing views" error message
 		echo "All done!";
 		exit;
@@ -136,16 +136,16 @@ class UsersController extends AppController {
 
 /**
  * User profile
- * 
+ *
  */
- 
+
 	public function profile() {
-	
+
 	}
 
 /**
  * login and logout method
- * 
+ *
  */
 	public function login() {
 		// redirect logged user
@@ -153,20 +153,21 @@ class UsersController extends AppController {
 			$this->Session->setFlash(__('You are logged in!'), 'flash/success');
 			$this->redirect($this->Auth->redirectUrl());
 		}
-		
+
 		if($this->request->is('post')) {
 			if ($this->Auth->login()) {
 				$this->Session->setFlash(__('Welcome '.$this->Session->read('Auth.User.first_name').' '.$this->Session->read('Auth.User.last_name').'!'), 'flash/success');
 				$this->redirect($this->Auth->redirectUrl());
 			} else {
-				$this->Session->setFlash(__('Invalid username or password! Please, try again...'), 'flash/error');
+				$this->Session->setFlash(__('Invalid username or password! Please, try again.'), 'flash/error');
 			}
 		}
 	}
-	
+
 	public function logout() {
-		$this->Session->setFlash(__('Goodbye... See you later!'), 'flash/success');
+		$this->Session->setFlash(__('Goodbye, see you later.'), 'flash/success');
 		$this->redirect($this->Auth->logout());
 	}
 
 }
+?>

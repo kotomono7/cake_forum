@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class GroupsController extends AppController {
-	
+
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// $this->Auth->allow();
@@ -39,9 +39,9 @@ class GroupsController extends AppController {
  */
 	public function view($id = null) {
 		if (!$this->Group->exists($id)) {
-			throw new NotFoundException(__('Invalid group'));
+			throw new NotFoundException(__('Invalid group'), 'flash/error');
 		}
-		$options = array('conditions' => array('Group.' . $this->Group->primaryKey => $id));
+		$options = array('conditions' => array('Group.' .$this->Group->primaryKey => $id));
 		$this->set('group', $this->Group->find('first', $options));
 	}
 
@@ -71,14 +71,15 @@ class GroupsController extends AppController {
  */
 	public function edit($id = null) {
 		if (!$this->Group->exists($id)) {
-			throw new NotFoundException(__('Invalid group'));
+			throw new NotFoundException(__('Invalid group!'), 'flash/error');
 		}
+
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->Group->save($this->request->data)) {
-				$this->Session->setFlash(__('The group has been saved.'));
+				$this->Session->setFlash(__('The group has been saved.'), 'flash/success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The group could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The group could not be saved. Please, try again.'), 'flash/error');
 			}
 		} else {
 			$options = array('conditions' => array('Group.' . $this->Group->primaryKey => $id));
@@ -96,14 +97,19 @@ class GroupsController extends AppController {
 	public function delete($id = null) {
 		$this->Group->id = $id;
 		if (!$this->Group->exists()) {
-			throw new NotFoundException(__('Invalid group'));
+			throw new NotFoundException(__('Invalid group!'), 'flash/error');
 		}
+
 		$this->request->allowMethod('post', 'delete');
+
 		if ($this->Group->delete()) {
-			$this->Session->setFlash(__('The group has been deleted.'));
+			$this->Session->setFlash(__('The group has been deleted.'), 'flash/success');
 		} else {
-			$this->Session->setFlash(__('The group could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The group could not be deleted. Please, try again.'), 'flash/error');
 		}
+
 		return $this->redirect(array('action' => 'index'));
 	}
+
 }
+?>

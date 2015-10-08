@@ -1,12 +1,12 @@
 <div class="panel-group" id="accordion">
     <div class="panel panel-default">
-		
+
         <div class="panel-heading toggle">
 			<h3 class="panel-title toggle"  data-toggle="collapse" data-parent="#accordion1" data-target="#collapseOne">
-				<i class="glyphicon glyphicon-file"></i> All Forums
+				<i class="glyphicon glyphicon-home"></i>&nbsp; Available Forums
 			</h3>
         </div>
-        
+
         <div id="collapseOne" class="panel-collapse collapse in">
 			<div class="panel-body">
 				<div class="table-responsive">
@@ -18,7 +18,7 @@
 							<th>Posts</th>
 							<th>Activity</th>
 						</tr>
-					</thead> 
+					</thead>
 					<tbody>
 						<?php $nr = 1; ?>
 						<?php foreach ($forums as $forum): ?>
@@ -65,12 +65,12 @@
 					</tbody>
 				</table>
 				</div>
-				
+
 				<div class="pull-right">
 					<?php echo $this->element('paginator'); ?>
 				</div>
 			</div>
         </div>
-        
+
     </div>
 </div>

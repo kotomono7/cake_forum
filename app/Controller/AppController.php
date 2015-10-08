@@ -36,30 +36,29 @@ class AppController extends Controller {
 		'Acl',
 		'Auth',
 		'Session',
-		// 'DebugKit.Toolbar'
 	);
-	
+
 	public $helpers = array('Html', 'Form', 'Js', 'Session');
-	
+
 	public function beforeFilter() {
 		// Configure AuthComponent
 		$this->Auth->allow('display');
-		
+
 		$this->Auth->loginAction = array(
 			'controller' => 'users',
 			'action' => 'login'
 		);
-		
+
 		$this->Auth->logoutRedirect = array(
 			'controller' => 'users',
 			'action' => 'login'
 		);
-		
+
 		$this->Auth->loginRedirect = array(
 			'controller' => 'forums',
 			'action' => 'index'
 		);
 	}
-	
+
 }
 ?>

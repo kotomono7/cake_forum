@@ -6,22 +6,22 @@
 		<?php echo $forum['Forum']['name']?>
 	</li>
 </ol>
- 
+
 <div class="panel-group" id="accordion">
     <div class="panel panel-default">
-		
+
         <div class="panel-heading toggle">
 			<h3 class="panel-title toggle"  data-toggle="collapse" data-parent="#accordion1" data-target="#collapseOne">
-				<i class="glyphicon glyphicon-file"></i> All Topics
+				<i class="glyphicon glyphicon-bullhorn"></i>&nbsp; Available Topics
 			</h3>
         </div>
-        
+
         <div id="collapseOne" class="panel-collapse collapse in">
 			<div class="panel-body">
-				<div class="row">					
+				<div class="row">
 					<div class="col-sm-8 col-md-8 col-lg-8">
 						<p>
-							<?php 
+							<?php
 								echo $this->Html->link(__('Create Topic'), array('action' => 'add'), array('class' => 'btn btn-primary'));
 							?>
 						</p>
@@ -36,7 +36,7 @@
 						</p>
 					</div>
 				</div>
-				
+
 				<div class="table-responsive">
 				<table class="table table-striped table-bordered table-hover">
 					<thead>
@@ -48,7 +48,7 @@
 							<th>Activity</th>
 						</tr>
 					</thead>
-					 
+
 					<tbody>
 						<?php $nr = 1; ?>
 						<?php foreach ($topics as $topic): ?>
@@ -108,7 +108,7 @@
 					</tbody>
 				</table>
 				</div>
-        
+
 				<div class="pull-right">
 					<?php
 						echo $this->element('paginator');
@@ -116,6 +116,6 @@
 				</div>
          	</div>
         </div>
-        
+
     </div>
 </div>

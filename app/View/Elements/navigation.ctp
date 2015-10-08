@@ -1,15 +1,18 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
+  <div class="container">
+
+    <div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
+      <?php echo $this->Html->image('cake.icon.png', array('alt' => 'cake.icon', 'class' => 'navbar-brand img-responsive')); ?>
 			<?php echo $this->Html->link(__('CakePHP Forum'), '/', array('class'=>'navbar-brand')); ?>
-        </div>
-        <div class="navbar-collapse collapse">
+    </div>
+
+    <div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
 			<?php if (!$this->Session->check('Auth.User')) { ?>
 				<li class="dropdown">
@@ -18,10 +21,22 @@
 					</a>
 					<ul class="dropdown-menu">
 						<li>
-							<?php echo $this->Html->link(__('Login'), array('controller' => 'Users', 'action' => 'login')); ?>
+							<?php
+                echo $this->Html->link(
+                  $this->Html->tag('i', '&nbsp;', array('class' => 'glyphicon glyphicon-log-in')).
+                  __('Login'), array('controller' => 'users', 'action' => 'login'),
+                  array('escape' => false)
+                );
+              ?>
 						</li>
 						<li>
-							<?php echo $this->Html->link(__('Register'), array('controller' => 'Users', 'action' => 'register')); ?>
+							<?php
+                echo $this->Html->link(
+                  $this->Html->tag('i', '&nbsp;', array('class' => 'glyphicon glyphicon-edit')).
+                  __('Register'), array('controller' => 'users', 'action' => 'register'),
+                  array('escape' => false)
+                );
+                ?>
 						</li>
 					</ul>
 				</li>
@@ -32,18 +47,37 @@
 					</a>
 					<ul class="dropdown-menu">
 						<li>
-							<?php echo $this->Html->link(__('My Profile'), array('controller' => 'Users', 'action' => 'profile')); ?>
+							<?php
+                echo $this->Html->link(
+                  $this->Html->tag('i', '&nbsp;', array('class' => 'glyphicon glyphicon-user')).
+                  __('My Profile'), array('controller' => 'users', 'action' => 'profile'),
+                  array('escape' => false)
+                );
+              ?>
 						</li>
 						<li>
-							<?php echo $this->Html->link(__('Change Password'), array('controller' => 'Users', 'action' => 'change_password')); ?>
+							<?php
+                echo $this->Html->link(
+                  $this->Html->tag('i', '&nbsp;', array('class' => 'glyphicon glyphicon-cog')).
+                  __('Settings'), array('controller' => 'users', 'action' => 'setting'),
+                  array('escape' => false)
+                );
+              ?>
 						</li>
 						<li>
-							<?php echo $this->Html->link(__('Logout'), array('controller' => 'Users', 'action' => 'logout')); ?>
+							<?php
+                echo $this->Html->link(
+                  $this->Html->tag('i', '&nbsp;', array('class' => 'glyphicon glyphicon-off')).
+                  __('Logout'), array('controller' => 'users', 'action' => 'logout'),
+                  array('escape' => false)
+                );
+              ?>
 						</li>
 					</ul>
 				</li>
 			<?php } ?>
 			</ul>
-        </div> <!--/.nav-collapse -->
-    </div>
+    </div> <!--/.nav-collapse -->
+
+  </div>
 </div>
