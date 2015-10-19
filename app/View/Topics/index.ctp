@@ -1,9 +1,9 @@
 <ol class="breadcrumb">
 	<li>
-		<?php echo $this->Html->link(__('Forum'), '/')?>
+		<?php echo $this->Html->link(__('Forum'), '/'); ?>
 	</li>
 	<li class="active">
-		<?php echo $forum['Forum']['name']?>
+		<?php echo $forum['Forum']['name']; ?>
 	</li>
 </ol>
 

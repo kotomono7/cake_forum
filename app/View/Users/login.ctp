@@ -3,7 +3,7 @@
 
     <div class="panel-heading toggle">
   		<h3 class="panel-title toggle"  data-toggle="collapse" data-parent="#accordion1" data-target="#collapseOne">
-  			<i class="glyphicon glyphicon-cog"></i>&nbsp; Member Area
+  			<i class="glyphicon glyphicon-log-in"></i>&nbsp; Member Area
   		</h3>
     </div>
 
@@ -12,7 +12,6 @@
 
         <fieldset>
   				<legend>Please, log in here...</legend>
-  				<?php echo $this->Session->flash(); ?>
   				<div class="col-sm-3 col-md-3 col-lg-3">
   				<?php
   					echo $this->Form->create('User', array(
@@ -56,8 +55,8 @@
   					<div class="input-group">
     					<?php
                 echo $this->Form->button(
-                  $this->Html->tag('i', '&nbsp;', array('class' => 'glyphicon glyphicon-log-in')).
-                  __('Login'),
+                  $this->Html->tag('i', '', array('class' => 'glyphicon glyphicon-log-in')).
+                  __('&nbsp; Login'),
                   array(
                     'type' => 'submit',
                     'class' => 'btn btn-primary',

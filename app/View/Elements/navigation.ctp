@@ -17,7 +17,7 @@
 			<?php if (!$this->Session->check('Auth.User')) { ?>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-						Member <b class="caret"></b>
+						You are not logged in <b class="caret"></b>
 					</a>
 					<ul class="dropdown-menu">
 						<li>

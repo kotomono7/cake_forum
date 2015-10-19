@@ -1,15 +1,16 @@
 <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
+  <div class="panel panel-default">
 
-        <div class="panel-heading toggle">
+    <div class="panel-heading toggle">
 			<h3 class="panel-title toggle"  data-toggle="collapse" data-parent="#accordion1" data-target="#collapseOne">
 				<i class="glyphicon glyphicon-home"></i>&nbsp; Available Forums
 			</h3>
-        </div>
+    </div>
 
-        <div id="collapseOne" class="panel-collapse collapse in">
+    <div id="collapseOne" class="panel-collapse collapse in">
 			<div class="panel-body">
-				<div class="table-responsive">
+
+    		<div class="table-responsive">
 				<table class="table table-striped table-bordered table-hover">
 					<thead>
 						<tr>
@@ -32,8 +33,8 @@
 									);
 								?>
 							</td>
-							<td><?php echo count($forum['Topic']);?></td>
-							<td><?php echo count($forum['Post']);?></td>
+							<td><?php echo count($forum['Topic']); ?></td>
+							<td><?php echo count($forum['Post']); ?></td>
 							<td>
 								<?php
 									if (count($forum['Post']) > 0) {
@@ -61,16 +62,18 @@
 							</td>
 						</tr>
 						<?php $nr++; ?>
-						<?php endforeach;?>
+						<?php endforeach; ?>
 					</tbody>
 				</table>
 				</div>
 
 				<div class="pull-right">
 					<?php echo $this->element('paginator'); ?>
-				</div>
-			</div>
+
         </div>
 
+			</div>
     </div>
+
+  </div>
 </div>

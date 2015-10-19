@@ -27,6 +27,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
   <?php
     echo $this->Html->meta('icon');
     echo $this->Html->script('jquery-1.9.1');
+    echo $this->Html->script('ckeditor/ckeditor', array('inline' => false));
     echo $this->Html->css('bootstrap');
     echo $this->Html->css('bootstrap.min');
     echo $this->Html->css('styles');
@@ -42,13 +43,20 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	</div>
 
 	<div id="content">
+		<?php $msg_auth = $this->Session->flash('auth'); ?>
+		<?php if (trim($msg_auth) != "" ) { ?>
+      <div class="alert alert-danger">
+      	<button type="button" class="close" data-dismiss="alert">&times;</button>
+      	<?php echo $msg_auth; ?>
+      </div><!-- /.alert alert-danger -->
+		<?php } ?>
 		<?php echo $this->Session->flash(); ?>
 		<?php echo $this->fetch('content'); ?>
 	</div>
 
 	<div id="footer">
 		<p class="text-muted text-center">
-			Copyright &copy; 2015 <a href="http://www.github.com/umamscarlet" target="_blank">Muhammad Khoirul Umam</a>
+			CakePHP Forum &copy; 2015 <a href="http://www.github.com/umamscarlet" target="_blank">Muhammad Khoirul Umam</a>
 				 - Powered by <?php echo $cakeVersion; ?>
 		</p>
 

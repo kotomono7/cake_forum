@@ -15,17 +15,18 @@
 </ol>
 
 <div class="panel-group" id="accordion">
-    <div class="panel panel-default">
+  <div class="panel panel-default">
 
-        <div class="panel-heading toggle">
+    <div class="panel-heading toggle">
 			<h3 class="panel-title toggle"  data-toggle="collapse" data-parent="#accordion1" data-target="#collapseOne">
 				<i class="glyphicon glyphicon-comment"></i>&nbsp; Available Posts
 			</h3>
-        </div>
+    </div>
 
-        <div id="collapseOne" class="panel-collapse collapse in">
+    <div id="collapseOne" class="panel-collapse collapse in">
 			<div class="panel-body">
-			<div class="row">
+
+  		<div class="row">
 				<div class="col-sm-8 col-md-8 col-lg-8">
 					<p class="lead">
 						<?php echo $topic['Topic']['content']; ?>
@@ -63,9 +64,7 @@
 					<div class="table-responsive">
 					<table class="table table-striped table-bordered table-hover">
 						<tbody>
-							<?php
-								foreach ($posts as $post) :
-							?>
+							<?php foreach ($posts as $post) : ?>
 							<tr>
 								<td>
 									<small><?php echo $this->Time->timeAgoInWords($post['Post']['created']); ?></small>
@@ -103,8 +102,8 @@
 
 					<div class="clearfix"></div>
 
-					<div class="well">
-						<h4><?php echo __('Quick Reply'); ?></h4>
+					<fieldset>
+						<legend><h4><?php echo __('Quick Reply'); ?></h4></legend>
 						<?php
 							echo $this->Form->create('Post',
 								array(
@@ -114,17 +113,44 @@
 							);
 						?>
 						<div class="form-group">
-							<?php echo $this->Form->textarea('content', array('class' => 'form-control', 'rows' => 5)); ?>
+              <?php
+                echo $this->Form->textarea('content',
+                  array(
+                    'id' => 'editor',
+                    'class' => 'ckeditor form-control'
+                  )
+                );
+              ?>
 						</div>
-						<?php echo $this->Form->hidden('topic_id',array('value' => $topic['Topic']['id'])); ?>
-						<?php echo $this->Form->hidden('forum_id',array('value' => $forum['Forum']['id'])); ?>
-						<?php echo $this->Form->submit(__('Post Reply'),array('class'=>'btn btn-primary')); ?>
+						<?php echo $this->Form->hidden('topic_id', array('value' => $topic['Topic']['id'])); ?>
+						<?php echo $this->Form->hidden('forum_id', array('value' => $forum['Forum']['id'])); ?>
+						<?php echo $this->Form->submit(__('Post Reply'), array('class'=>'btn btn-primary')); ?>
 						<?php echo $this->Form->end(); ?>
-					</div>
+					</fieldset>
 				</div>
 			</div>
-         	</div>
-        </div>
 
+      </div>
     </div>
+
+  </div>
 </div>
+
+<script type="text/javascript">
+    CKEDITOR.replace( 'editor',
+      {
+        toolbarGroups: [
+          { name: 'basicstyles', groups: [ 'basicstyles', 'cleanup' ] },
+        	{ name: 'paragraph',   groups: [ 'list', 'indent', 'blocks', 'align', 'bidi' ] },
+        	{ name: 'links' },
+        	{ name: 'forms' },
+        	{ name: 'tools' },
+        	{ name: 'document',	   groups: [ 'mode', 'document', 'doctools' ] },
+        	{ name: 'others' },
+        	{ name: 'about' }
+        ],
+        skin: 'bootstrapck',
+        // extraPlugins: 'imageuploader,tableresize',
+      }
+    );
+</script>

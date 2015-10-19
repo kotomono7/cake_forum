@@ -58,6 +58,12 @@ class AppController extends Controller {
 			'controller' => 'forums',
 			'action' => 'index'
 		);
+
+		$this->Auth->authError = __('You are not authorized to access this page!', 'flash/error');
+
+		// if (!$this->Auth->loggedIn()) {
+    // 	$this->Auth->authError = false;
+		// }
 	}
 
 }
