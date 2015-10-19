@@ -9,7 +9,7 @@ This web is just for learning example for everyone who want to learn and explore
 2. PostgreSQL >= 9.4
 
 ## Component
-Twitter Bootstrap v3.3.4
+Twitter Bootstrap v3.3.4, CKEditor v4.4.5
 
 ## Plugin
 AclExtras
