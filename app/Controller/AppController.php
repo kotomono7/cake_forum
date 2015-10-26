@@ -34,36 +34,34 @@ class AppController extends Controller {
 
 	public $components = array(
 		'Acl',
-		'Auth',
-		'Session',
-	);
-
-	public $helpers = array('Html', 'Form', 'Js', 'Session');
+		'Auth' => array(
+			'authorize' => array(
+				'Actions' => array('actionPath' => 'controllers')
+			)
+		),
+		'Session');
+	public $helpers = array('Html', 'Form', 'Js', 'Session', 'Captcha');
 
 	public function beforeFilter() {
 		// Configure AuthComponent
-		$this->Auth->allow('display');
-
+		$this->Auth->allow('display', 'home');
 		$this->Auth->loginAction = array(
 			'controller' => 'users',
 			'action' => 'login'
 		);
-
 		$this->Auth->logoutRedirect = array(
 			'controller' => 'users',
 			'action' => 'login'
 		);
-
 		$this->Auth->loginRedirect = array(
 			'controller' => 'forums',
 			'action' => 'index'
 		);
-
 		$this->Auth->authError = __('You are not authorized to access this page!', 'flash/error');
 
-		// if (!$this->Auth->loggedIn()) {
-    // 	$this->Auth->authError = false;
-		// }
+		/** if (!$this->Auth->loggedIn()) {
+     	$this->Auth->authError = false;
+		} */
 	}
 
 }

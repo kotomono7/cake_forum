@@ -1,23 +1,35 @@
-<div class="groups form">
-<?php echo $this->Form->create('Group'); ?>
-	<fieldset>
-		<legend><?php echo __('Edit Group'); ?></legend>
-	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('name');
-		echo $this->Form->input('created_by');
-		echo $this->Form->input('modified_by');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
 
-		<li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Group.id')), array(), __('Are you sure you want to delete # %s?', $this->Form->value('Group.id'))); ?></li>
-		<li><?php echo $this->Html->link(__('List Groups'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
-	</ul>
+    <div class="panel-heading toggle">
+  		<h3 class="panel-title toggle"  data-toggle="collapse" data-parent="#accordion1" data-target="#collapseOne">
+  			<i class="glyphicon glyphicon-plus"></i>&nbsp; Add New User
+  		</h3>
+    </div>
+
+    <div id="collapseOne" class="panel-collapse collapse in">
+		  <div class="panel-body">
+
+        <?php echo $this->Form->create('Group', array('class' => 'form-horizontal')); ?>
+				<?php echo $this->Form->input('id'); ?>
+				<div class="form-group">
+          <div class="col-sm-4">
+             <?php echo $this->Form->input('name', array('class' => 'form-control')); ?>
+          </div>
+        </div>
+          <?php
+            echo $this->Form->input('modified_by',
+              array('type' => 'hidden', 'value' => $this->Session->read('Auth.User.username'))
+            );
+          ?>
+        <div class="form-group">
+          <div class="col-sm-4">
+            <?php echo $this->Form->submit(__('Save'), array('class'=>'btn btn-primary')); ?>
+          </div>
+        </div>
+				<?php echo $this->Form->end(); ?>
+      </div>
+    </div>
+
+  </div>
 </div>

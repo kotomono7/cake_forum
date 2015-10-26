@@ -69,7 +69,6 @@
 
 				<div class="pull-right">
 					<?php echo $this->element('paginator'); ?>
-
         </div>
 
 			</div>

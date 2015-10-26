@@ -20,19 +20,19 @@
 			<div class="panel-body">
 				<div class="row">
 					<div class="col-sm-8 col-md-8 col-lg-8">
-						<p>
-							<?php
-								echo $this->Html->link(__('Create Topic'), array('action' => 'add'), array('class' => 'btn btn-primary'));
-							?>
-						</p>
-					</div>
-					<div class="col-sm-4 col-md-4 col-lg-4">
-						<p class="pull-right" style="margin-top: 7px;">
+						<p style="margin-top: 7px;">
 							<strong>
 							<?php
 								echo $this->Paginator->counter('Showing {:start} - {:end} of {:count}');
 							?>
 							</strong>
+						</p>
+					</div>
+					<div class="col-sm-4 col-md-4 col-lg-4">
+						<p class="pull-right">
+							<?php
+								echo $this->Html->link(__('Create Topic'), array('action' => 'add'), array('class' => 'btn btn-primary'));
+							?>
 						</p>
 					</div>
 				</div>

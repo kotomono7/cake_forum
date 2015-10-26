@@ -1,4 +1,7 @@
 <style>
+ul.pagination {
+  margin: 0;
+}
 ul.pagination .active,
 ul.pagination .disabled {
   float: left;

@@ -7,10 +7,10 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class UsersController extends AppController {
-
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// $this->Auth->allow();
+		$this->Auth->allow('captcha', 'login');
 	}
 
 	// initialize ACL for each groups
@@ -50,6 +50,7 @@ class UsersController extends AppController {
  */
 	public function index() {
 		$this->User->recursive = 0;
+		$this->paginate = array('order' => array('User.id' => 'asc'));
 		$this->set('users', $this->Paginator->paginate());
 	}
 
@@ -77,12 +78,13 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
 			$this->User->create();
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved.'));
+				$this->Session->setFlash(__('The user has been saved.'), 'flash/success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The user could not be saved. Please, try again.'), 'flash/error');
 			}
 		}
+
 		$groups = $this->User->Group->find('list');
 		$this->set(compact('groups'));
 	}
@@ -100,10 +102,10 @@ class UsersController extends AppController {
 		}
 		if ($this->request->is(array('post', 'put'))) {
 			if ($this->User->save($this->request->data)) {
-				$this->Session->setFlash(__('The user has been saved.'));
+				$this->Session->setFlash(__('The user has been saved.'), 'flash/success');
 				return $this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The user could not be saved. Please, try again.'), 'flash/error');
 			}
 		} else {
 			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
@@ -127,9 +129,9 @@ class UsersController extends AppController {
 		}
 		$this->request->allowMethod('post', 'delete');
 		if ($this->User->delete()) {
-			$this->Session->setFlash(__('The user has been deleted.'));
+			$this->Session->setFlash(__('The user has been deleted.'), 'flash/success');
 		} else {
-			$this->Session->setFlash(__('The user could not be deleted. Please, try again.'));
+			$this->Session->setFlash(__('The user could not be deleted. Please, try again.'), 'flash/error');
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
@@ -144,6 +146,23 @@ class UsersController extends AppController {
 	}
 
 /**
+ * generate captcha image
+ */
+	function captcha() {
+	  $this->autoRender = false;
+	  $this->layout = 'ajax';
+
+		if (!isset($this->Captcha)) {
+	    $this->Captcha = $this->Components->load('Captcha', array(
+		    'width' => 275,
+		    'height' => 75,
+		    'theme' => 'random',
+	    )); //load it
+	  }
+	  $this->Captcha->create();
+  }
+
+/**
  * login and logout method
  *
  */
@@ -155,12 +174,25 @@ class UsersController extends AppController {
 		}
 
 		if($this->request->is('post')) {
-			if ($this->Auth->login()) {
-				$this->Session->setFlash(__('Welcome '.$this->Session->read('Auth.User.first_name').' '.$this->Session->read('Auth.User.last_name').'!'), 'flash/success');
-				$this->redirect($this->Auth->redirectUrl());
-			} else {
-				$this->Session->setFlash(__('Invalid username or password! Please, try again.'), 'flash/error');
+			if (!isset($this->Captcha))	{
+				$this->Captcha = $this->Components->load('Captcha'); //load it
 			}
+
+			$this->User->setCaptcha($this->Captcha->getVerCode()); //getting from component and passing to model to make proper validation check
+			$this->User->set($this->request->data);
+
+			if ($this->request->is('post')) {
+				if ($this->User->validates()) {
+					// after successfully validating user
+					if ($this->Auth->login()) {
+						$this->Session->setFlash(__('Welcome '.$this->Session->read('Auth.User.first_name').' '.$this->Session->read('Auth.User.last_name').'!'), 'flash/success');
+						$this->redirect($this->Auth->redirectUrl());
+					} else {
+						$this->Session->setFlash(__('Invalid username or password! Please, try again.'), 'flash/error');
+					}
+				}
+			}
+
 		}
 	}
 

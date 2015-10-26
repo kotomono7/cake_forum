@@ -3063,3 +3063,819 @@ Stack Trace:
 #3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2015-10-19 14:37:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:38:09 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:38:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:38:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:40:09 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /cake-forum/users/register
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-19 14:40:13 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:40:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:42:56 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:43:08 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:44:57 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:45:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:45:19 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-19 14:47:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:47:01 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:47:10 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:47:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:47:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:47:47 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:49:14 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:51:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:55:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:58:38 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 10:58:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:01:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:05:48 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:06:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:12:39 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:12:55 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:18:17 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:20:29 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:20:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:27:02 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:33:54 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:34:12 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/ckeditor/kcfinder/browse.php?type=images&CKEditor=editor&CKEditorFuncNum=1&langCode=en
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:35:46 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/ckeditor/kcfinder/browse.php?type=images&CKEditor=editor&CKEditorFuncNum=1&langCode=en
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:36:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:37:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:38:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/cfinder/browse.php?type=images&CKEditor=editor&CKEditorFuncNum=1&langCode=en
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:39:37 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:39:57 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cake-forum/app/webroot/js/cfinder/browse.php?type=images&CKEditor=editor&CKEditorFuncNum=1&langCode=en
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-20 11:40:35 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:43:58 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-20 11:44:31 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /cake-forum/js/jquery-1.10.2.min.map
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-10-25 10:06:20 Error: [MissingHelperException] Helper class CaptchaHelper could not be found.
+Exception Attributes: array (
+  'class' => 'CaptchaHelper',
+  'plugin' => false,
+)
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/View/View.php(897): HelperCollection->load('Captcha', Array)
+#1 /var/www/cakephp/cake-forum/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/cakephp/cake-forum/lib/Cake/Controller/Controller.php(1247): View->__construct(Object(UsersController))
+#3 /var/www/cakephp/cake-forum/lib/Cake/Controller/Controller.php(946): Controller->_getViewObject()
+#4 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#6 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-10-25 10:17:02 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/cakephp/cake-forum/app/Controller/UsersController.php, line 155]
+2015-10-25 10:17:02 Error: [FatalErrorException] syntax error, unexpected ','
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 155)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 155, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 155, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:17:25 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/cakephp/cake-forum/app/Model/User.php, line 51]
+2015-10-25 13:17:25 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:19:06 Error: Fatal Error (4): syntax error, unexpected '(', expecting ')' in [/var/www/cakephp/cake-forum/app/Model/User.php, line 51]
+2015-10-25 13:19:06 Error: [FatalErrorException] syntax error, unexpected '(', expecting ')'
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:19:49 Error: Fatal Error (4): syntax error, unexpected '(', expecting ')' in [/var/www/cakephp/cake-forum/app/Model/User.php, line 51]
+2015-10-25 13:19:49 Error: [FatalErrorException] syntax error, unexpected '(', expecting ')'
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:20:27 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/cakephp/cake-forum/app/Model/User.php, line 51]
+2015-10-25 13:20:27 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:22:11 Error: Fatal Error (4): syntax error, unexpected '(', expecting ')' in [/var/www/cakephp/cake-forum/app/Model/User.php, line 52]
+2015-10-25 13:22:11 Error: [FatalErrorException] syntax error, unexpected '(', expecting ')'
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 52)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 52, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:30:25 Error: Fatal Error (4): syntax error, unexpected '(', expecting ')' in [/var/www/cakephp/cake-forum/app/Model/User.php, line 72]
+2015-10-25 13:30:25 Error: [FatalErrorException] syntax error, unexpected '(', expecting ')'
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 72)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 72, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 72, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:39:08 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [/var/www/cakephp/cake-forum/app/View/Users/login.ctp, line 100]
+2015-10-25 13:39:08 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 100)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 100, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 100, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:44:28 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /cake-forum/users/register
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-25 13:45:28 Error: Fatal Error (4): syntax error, unexpected 'class' (T_CLASS), expecting ')' in [/var/www/cakephp/cake-forum/app/View/Users/login.ctp, line 104]
+2015-10-25 13:45:28 Error: [FatalErrorException] syntax error, unexpected 'class' (T_CLASS), expecting ')'
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 104)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 104, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 104, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:46:29 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /cake-forum/users/register
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-25 13:49:15 Error: Fatal Error (4): syntax error, unexpected ')' in [/var/www/cakephp/cake-forum/app/View/Users/login.ctp, line 105]
+2015-10-25 13:49:15 Error: [FatalErrorException] syntax error, unexpected ')'
+Request URL: /cake-forum/users/login/class:btn%20btn-link
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 105)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 105, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 105, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 13:50:04 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /cake-forum/users/register/class:btn%20btn-link
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-25 13:50:25 Error: [MissingActionException] Action UsersController::register() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'register',
+)
+Request URL: /cake-forum/users/register/class:btn%20btn-link
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-25 13:57:30 Error: Fatal Error (4): syntax error, unexpected ''allowEmpty'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/var/www/cakephp/cake-forum/app/Model/User.php, line 72]
+2015-10-25 13:57:30 Error: [FatalErrorException] syntax error, unexpected ''allowEmpty'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 72)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 72, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 72, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 14:17:28 Error: Fatal Error (4): syntax error, unexpected '$this' (T_VARIABLE) in [/var/www/cakephp/cake-forum/app/Model/User.php, line 71]
+2015-10-25 14:17:28 Error: [FatalErrorException] syntax error, unexpected '$this' (T_VARIABLE)
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 71)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 71, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 71, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 14:17:52 Error: Fatal Error (4): syntax error, unexpected '(', expecting ')' in [/var/www/cakephp/cake-forum/app/Model/User.php, line 71]
+2015-10-25 14:17:52 Error: [FatalErrorException] syntax error, unexpected '(', expecting ')'
+Request URL: /cake-forum/users/login
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 71)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 71, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 71, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 21:10:17 Error: [MissingActionException] Action PostsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /cake-forum/posts
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-25 21:25:20 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/cakephp/cake-forum/app/View/Groups/index.ctp, line 63]
+2015-10-25 21:25:20 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cake-forum/groups/
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 63)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 63, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 63, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 23:02:54 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [/var/www/cakephp/cake-forum/app/View/Users/add.ctp, line 51]
+2015-10-25 23:02:54 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+Request URL: /cake-forum/users/add
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/cakeph...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/cakeph...', 51, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 23:49:57 Error: Fatal Error (1): Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in [/var/www/cakephp/cake-forum/lib/Cake/Error/exceptions.php, line 151]
+2015-10-25 23:49:57 Error: [FatalErrorException] Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]])
+Request URL: /cake-forum/topics
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Wrong parameter...', '/var/www/cakeph...', 151)
+#1 [internal function]: ErrorHandler::handleError(1, 'Wrong parameter...', '/var/www/cakeph...', 151, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Wrong parameter...', '/var/www/cakeph...', 151, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 23:53:36 Error: Fatal Error (1): Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]]) in [/var/www/cakephp/cake-forum/lib/Cake/Error/exceptions.php, line 151]
+2015-10-25 23:53:36 Error: [FatalErrorException] Wrong parameters for Exception([string $exception [, long $code [, Exception $previous = NULL]]])
+Request URL: /cake-forum/topics
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Wrong parameter...', '/var/www/cakeph...', 151)
+#1 [internal function]: ErrorHandler::handleError(1, 'Wrong parameter...', '/var/www/cakeph...', 151, Array)
+#2 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Wrong parameter...', '/var/www/cakeph...', 151, Array)
+#3 /var/www/cakephp/cake-forum/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-10-25 23:53:39 Error: [MissingActionException] Action PostsController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'index',
+)
+Request URL: /cake-forum/posts
+Stack Trace:
+#0 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/cakephp/cake-forum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /var/www/cakephp/cake-forum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-10-26 10:54:10 Error: [CakeException] Authorization adapter "actions" was not found.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(TopicsController))
+#3 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-26 10:54:25 Error: [CakeException] Authorization adapter "actions" was not found.
+Request URL: /users
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(UsersController))
+#3 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-26 10:54:57 Error: [CakeException] Authorization adapter "action" was not found.
+Request URL: /users
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(UsersController))
+#3 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-26 11:19:54 Error: [CakeException] $controller does not implement an isAuthorized() method.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/Auth/BaseAuthorize.php(72): ControllerAuthorize->controller(Object(TopicsController))
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(502): BaseAuthorize->__construct(Object(ComponentCollection), Array)
+#2 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#3 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#4 [internal function]: AuthComponent->startup(Object(TopicsController))
+#5 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#8 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#10 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#11 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-26 11:21:06 Error: [CakeException] $controller does not implement an isAuthorized() method.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/Auth/BaseAuthorize.php(72): ControllerAuthorize->controller(Object(TopicsController))
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(502): BaseAuthorize->__construct(Object(ComponentCollection), Array)
+#2 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#3 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#4 [internal function]: AuthComponent->startup(Object(TopicsController))
+#5 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#8 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#10 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#11 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-26 11:22:20 Error: [CakeException] Authorization adapter "actions" was not found.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(TopicsController))
+#3 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-26 11:22:31 Error: [CakeException] Authorization adapter "action" was not found.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(TopicsController))
+#3 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-26 11:23:39 Error: [CakeException] Authorization adapter "Action" was not found.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(TopicsController))
+#3 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-26 11:23:50 Error: [CakeException] $controller does not implement an isAuthorized() method.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/Auth/BaseAuthorize.php(72): ControllerAuthorize->controller(Object(TopicsController))
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(502): BaseAuthorize->__construct(Object(ComponentCollection), Array)
+#2 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#3 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#4 [internal function]: AuthComponent->startup(Object(TopicsController))
+#5 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#6 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#8 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#9 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#10 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#11 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-10-26 11:27:59 Error: [CakeException] Authorization adapter "controller" was not found.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(TopicsController))
+#3 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-26 11:28:16 Error: [CakeException] Authorization adapter "controllers" was not found.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(TopicsController))
+#3 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-10-26 11:28:35 Error: [CakeException] Authorization adapter "Group" was not found.
+Request URL: /topics/add
+Stack Trace:
+#0 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(464): AuthComponent->constructAuthorize()
+#1 /var/www/cakeforum/lib/Cake/Controller/Component/AuthComponent.php(310): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(TopicsController))
+#3 /var/www/cakeforum/lib/Cake/Utility/ObjectCollection.php(128): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /var/www/cakeforum/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /var/www/cakeforum/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
+#9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

@@ -27,6 +27,7 @@ class GroupsController extends AppController {
  */
 	public function index() {
 		$this->Group->recursive = 0;
+		$this->paginate = array('order' => array('Group.id' => 'asc'));
 		$this->set('groups', $this->Paginator->paginate());
 	}
 

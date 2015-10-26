@@ -51,20 +51,52 @@
   						?>
   					</div>
   				</div>
+          <div class="form-group">
+  					<div class="input-group">
+              <?php
+                echo '<p align="center" class="img-responsive" style="margin-bottom: 0;">';
+                echo $this->Html->image(
+                  $this->Html->url(
+                    array(
+                      'controller' => 'users',
+                      'action' => 'captcha'
+                    ),
+                    true
+                  ),
+                  array('id' => 'captcha-img', 'vspace' => 0, 'align' => 'center')
+                );
+                echo '<a href="" id="reload-captcha" class="btn btn-link">Can\'t read? Reload captcha image</a>';
+                echo '</p>';
+                echo $this->Form->input('captcha',
+                  array(
+                    'autocomplete' => 'off',
+                    'label' => false,
+                    'class' => 'form-control',
+                    'placeholder' => 'Enter captcha code...'
+                  )
+                );
+              ?>
+            </div>
+          </div>
   				<div class="form-group">
   					<div class="input-group">
     					<?php
                 echo $this->Form->button(
                   $this->Html->tag('i', '', array('class' => 'glyphicon glyphicon-log-in')).
-                  __('&nbsp; Login'),
+                  __('&nbsp; Log in'),
                   array(
                     'type' => 'submit',
                     'class' => 'btn btn-primary',
                     'escape' => false
                   )
                 );
+                echo $this->Form->end();
+
+                /** echo $this->Html->link('Register new account here!',
+                  array('controller' => 'users', 'action' => 'register')
+                  array('class' => 'btn btn-link')
+                ); */
               ?>
-  						<?php echo $this->Form->end(); ?>
   					</div>
   				</div>
   			</fieldset>
@@ -74,3 +106,11 @@
 
   </div>
 </div>
+
+<script>
+  $('#reload-captcha').click(function() {
+  	var $captcha = $("#captcha-img");
+      $captcha.attr('src', $captcha.attr('src')+'?'+Math.random());
+  	return false;
+  });
+</script>

@@ -103,7 +103,7 @@
 					<div class="clearfix"></div>
 
 					<fieldset>
-						<legend><h4><?php echo __('Quick Reply'); ?></h4></legend>
+						<legend><h4><i class="glyphicon glyphicon-share-alt"></i> <?php echo __('Quick Reply'); ?></h4></legend>
 						<?php
 							echo $this->Form->create('Post',
 								array(

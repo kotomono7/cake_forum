@@ -56,8 +56,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 	<div id="footer">
 		<p class="text-muted text-center">
-			CakePHP Forum &copy; 2015 <a href="http://www.github.com/umamscarlet" target="_blank">Muhammad Khoirul Umam</a>
-				 - Powered by <?php echo $cakeVersion; ?>
+			CakePHP Forum &copy; 2015, Powered by <?php echo $cakeVersion; ?>
+      <br>Developed by <a href="http://www.github.com/umamscarlet" target="_blank">Muhammad Khoirul Umam</a>
 		</p>
 
 		<p id="ScrollToTop" class="text-center">
