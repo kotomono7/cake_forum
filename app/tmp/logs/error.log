@@ -3879,3 +3879,21 @@ Stack Trace:
 #8 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(TopicsController), Object(CakeRequest))
 #9 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #10 {main}
+2015-10-27 05:57:17 Error: [NotFoundException] Invalid user
+Request URL: /users/profile
+Stack Trace:
+#0 [internal function]: UsersController->profile()
+#1 /var/www/cakeforum/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-10-27 05:57:39 Error: [NotFoundException] Invalid user
+Request URL: /users/profile
+Stack Trace:
+#0 [internal function]: UsersController->profile()
+#1 /var/www/cakeforum/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/cakeforum/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/cakeforum/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

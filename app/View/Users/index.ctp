@@ -1,22 +1,3 @@
-<!-- sidebar navigations
-	<div id="sidebar" class="col-md-2">
-	<fieldset>
-		<legend><?php echo __('Actions'); ?></legend>
-		<div class="actions">
-			<ul class="list-group">
-				<li class="list-group-item"><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('List Topics'), array('controller' => 'topics', 'action' => 'index')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('New Topic'), array('controller' => 'topics', 'action' => 'add')); ?></li>
-			</ul>
-		</div>
-	</fieldset>
-	</div>
--->
-
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
 
@@ -46,8 +27,8 @@
 							<th><?php echo $this->Paginator->sort('username'); ?></th>
 							<th><?php echo $this->Paginator->sort('group_id'); ?></th>
 							<th><?php echo $this->Paginator->sort('created'); ?></th>
-							<th><?php echo $this->Paginator->sort('modified'); ?></th>
 							<th><?php echo $this->Paginator->sort('created_by'); ?></th>
+              <th><?php echo $this->Paginator->sort('modified'); ?></th>
 							<th><?php echo $this->Paginator->sort('modified_by'); ?></th>
 							<th class="actions"><?php echo __('Actions'); ?></th>
 						</tr>
@@ -62,8 +43,8 @@
 								<?php echo $this->Html->link($user['Group']['name'], array('controller' => 'groups', 'action' => 'view', $user['Group']['id'])); ?>
 							</td>
 							<td><?php echo h($user['User']['created']); ?></td>
+              <td><?php echo h($user['User']['created_by']); ?></td>
 							<td><?php echo h($user['User']['modified']); ?></td>
-							<td><?php echo h($user['User']['created_by']); ?></td>
 							<td><?php echo h($user['User']['modified_by']); ?></td>
 							<td class="actions">
 								<?php echo $this->Html->link(__('View'), array('action' => 'view', $user['User']['id']), array('class' => 'btn btn-xs btn-primary')); ?>

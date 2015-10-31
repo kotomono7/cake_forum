@@ -1,22 +1,3 @@
-<!-- sidebar navigations
-	<div id="sidebar" class="col-md-2">
-	<fieldset>
-		<legend><?php echo __('Actions'); ?></legend>
-		<div class="actions">
-			<ul class="list-group">
-				<li class="list-group-item"><?php echo $this->Html->link(__('New User'), array('action' => 'add')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('List Posts'), array('controller' => 'posts', 'action' => 'index')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('New Post'), array('controller' => 'posts', 'action' => 'add')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('List Topics'), array('controller' => 'topics', 'action' => 'index')); ?></li>
-				<li class="list-group-item"><?php echo $this->Html->link(__('New Topic'), array('controller' => 'topics', 'action' => 'add')); ?></li>
-			</ul>
-		</div>
-	</fieldset>
-	</div>
--->
-
 <div class="panel-group" id="accordion">
   <div class="panel panel-default">
 
@@ -44,8 +25,8 @@
 							<th><?php echo $this->Paginator->sort('id'); ?></th>
 							<th><?php echo $this->Paginator->sort('name'); ?></th>
 							<th><?php echo $this->Paginator->sort('created'); ?></th>
+              <th><?php echo $this->Paginator->sort('created_by'); ?></th>
 							<th><?php echo $this->Paginator->sort('modified'); ?></th>
-							<th><?php echo $this->Paginator->sort('created_by'); ?></th>
 							<th><?php echo $this->Paginator->sort('modified_by'); ?></th>
 							<th class="actions"><?php echo __('Actions'); ?></th>
 						</tr>
@@ -53,12 +34,12 @@
 					<tbody>
 					<?php foreach ($groups as $group): ?>
 					<tr>
-						<td><?php echo h($group['Group']['id']); ?>&nbsp;</td>
-						<td><?php echo h($group['Group']['name']); ?>&nbsp;</td>
-						<td><?php echo h($group['Group']['created']); ?>&nbsp;</td>
-						<td><?php echo h($group['Group']['modified']); ?>&nbsp;</td>
-						<td><?php echo h($group['Group']['created_by']); ?>&nbsp;</td>
-						<td><?php echo h($group['Group']['modified_by']); ?>&nbsp;</td>
+						<td><?php echo h($group['Group']['id']); ?></td>
+						<td><?php echo h($group['Group']['name']); ?></td>
+						<td><?php echo h($group['Group']['created']); ?></td>
+            <td><?php echo h($group['Group']['created_by']); ?></td>
+						<td><?php echo h($group['Group']['modified']); ?></td>
+						<td><?php echo h($group['Group']['modified_by']); ?></td>
 						<td class="actions">
 							<?php echo $this->Html->link(__('View'), array('action' => 'view', $group['Group']['id']), array('class' => 'btn btn-xs btn-primary')); ?>
 							<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $group['Group']['id']), array('class' => 'btn btn-xs btn-success')); ?>

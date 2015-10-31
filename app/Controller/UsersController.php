@@ -10,7 +10,7 @@ class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// $this->Auth->allow();
-		$this->Auth->allow('captcha', 'login');
+		$this->Auth->allow('captcha', 'register', 'login', 'profile');
 	}
 
 	// initialize ACL for each groups
@@ -21,7 +21,7 @@ class UsersController extends AppController {
 		$group->id = 1;
 		$this->Acl->allow($group, 'controllers');
 
-		// allow member to forums, topics and post
+		// allow moderator to forums, topics and post
 		$group->id = 2;
 		$this->Acl->deny($group, 'controllers');
 		$this->Acl->allow($group, 'controllers/Forums');
@@ -141,8 +141,12 @@ class UsersController extends AppController {
  *
  */
 
-	public function profile() {
-
+	public function profile($id = null) {
+		if (!$this->User->exists($id)) {
+			throw new NotFoundException(__('Invalid user'));
+		}
+		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+		$this->set('user', $this->User->find('first', $options));
 	}
 
 /**

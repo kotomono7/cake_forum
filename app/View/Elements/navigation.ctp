@@ -9,7 +9,7 @@
 				<span class="icon-bar"></span>
 			</button>
       <?php echo $this->Html->image('cake.icon.png', array('alt' => 'cake.icon', 'class' => 'navbar-brand img-responsive')); ?>
-			<?php echo $this->Html->link(__('CakePHP Forum'), '/', array('class'=>'navbar-brand')); ?>
+			<strong><?php echo $this->Html->link(__('CakePHP Forum'), '/', array('class'=>'navbar-brand')); ?></strong>
     </div>
 
     <div class="navbar-collapse collapse">
