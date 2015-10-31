@@ -8,8 +8,8 @@ This web is just for learning example for everyone who want to learn and explore
 1. CakePHP >= 2.6.7
 2. PostgreSQL >= 9.4
 
-## Component
-Twitter Bootstrap v3.3.4, CKEditor v4.4.5
+## Components
+Twitter Bootstrap v3.3.4, CKEditor v4.4.5, jQueryUI v1.10.3
 
 ## Plugin
 AclExtras
