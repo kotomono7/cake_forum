@@ -12,7 +12,7 @@
 
 				<div class="table-responsive">
 				<fieldset>
-				<legend><i class="glyphicon glyphicon-user"></i> <?php echo __('User Details'); ?></legend>
+				<legend><small><i class="glyphicon glyphicon-user"></i> <?php echo __('User Details'); ?></small></legend>
 	    		<div class="table-responsive">
 					<table class="table table-striped table-bordered table-hover">
 						<tbody>
@@ -42,7 +42,7 @@
 							</tr>
 							<tr>
 								<td><strong><?php echo __('E-mail'); ?></strong></td>
-								<td><?php echo h($user['User']['email']); ?></td>
+								<td><a href="mailto:<?php echo h($user['User']['email']); ?>"><?php echo h($user['User']['email']); ?></a></td>
 							</tr>
 							<tr>
 								<td><strong><?php echo __('Group'); ?></strong></td>
@@ -78,7 +78,7 @@
 						<table class="table table-striped table-bordered table-hover">
 							<thead>
 								<tr>
-									<th><?php echo __('Id'); ?></th>
+									<th><?php echo __('#'); ?></th>
 									<th><?php echo __('Topic Id'); ?></th>
 									<th><?php echo __('Forum Id'); ?></th>
 									<th><?php echo __('Created'); ?></th>
@@ -118,7 +118,7 @@
 						<table class="table table-striped table-bordered table-hover">
 							<thead>
 								<tr>
-									<th><?php echo __('Id'); ?></th>
+									<th><?php echo __('#'); ?></th>
 									<th><?php echo __('Name'); ?></th>
 									<th><?php echo __('Content'); ?></th>
 									<th><?php echo __('Created'); ?></th>

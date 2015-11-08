@@ -10,23 +10,34 @@ class UsersController extends AppController {
 	public function beforeFilter() {
 		parent::beforeFilter();
 		// $this->Auth->allow();
-		$this->Auth->allow('captcha', 'register', 'login', 'profile');
+		$this->Auth->allow('captcha', 'register', 'login', 'profile', 'setting');
 	}
 
 	// initialize ACL for each groups
 	public function initDB() {
 		$group = $this->User->Group;
 
-		// Allow admin to everything
+		// allow admin to everything
 		$group->id = 1;
 		$this->Acl->allow($group, 'controllers');
 
-		// allow moderator to forums, topics and post
+		// allow moderator to forums, topics and posts
 		$group->id = 2;
 		$this->Acl->deny($group, 'controllers');
 		$this->Acl->allow($group, 'controllers/Forums');
 		$this->Acl->allow($group, 'controllers/Topics');
 		$this->Acl->allow($group, 'controllers/Posts');
+
+		// allow member to:
+		// 1. view forums, topics and posts
+		// 2. add topics and posts
+		$group->id = 3;
+		$this->Acl->deny($group, 'controllers');
+		$this->Acl->allow($group, 'controllers/Forums/index');
+		$this->Acl->allow($group, 'controllers/Topics/add');
+		$this->Acl->allow($group, 'controllers/Topics/index');
+		$this->Acl->allow($group, 'controllers/Topics/view');
+		$this->Acl->allow($group, 'controllers/Posts/add');
 
 		// allow basic users to log out
 		$this->Acl->allow($group, 'controllers/Users/logout');
@@ -65,7 +76,7 @@ class UsersController extends AppController {
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
-		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+		$options = array('conditions' => array('User.' .$this->User->primaryKey => $id));
 		$this->set('user', $this->User->find('first', $options));
 	}
 
@@ -108,7 +119,7 @@ class UsersController extends AppController {
 				$this->Session->setFlash(__('The user could not be saved. Please, try again.'), 'flash/error');
 			}
 		} else {
-			$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+			$options = array('conditions' => array('User.' .$this->User->primaryKey => $id));
 			$this->request->data = $this->User->find('first', $options);
 		}
 		$groups = $this->User->Group->find('list');
@@ -137,7 +148,16 @@ class UsersController extends AppController {
 	}
 
 /**
- * User profile
+ * register method
+ *
+ */
+
+ public function register() {
+	 
+ }
+
+/**
+ * profile and setting method
  *
  */
 
@@ -145,7 +165,31 @@ class UsersController extends AppController {
 		if (!$this->User->exists($id)) {
 			throw new NotFoundException(__('Invalid user'));
 		}
-		$options = array('conditions' => array('User.' . $this->User->primaryKey => $id));
+		$options = array(
+			'conditions' => array('User.' .$this->User->primaryKey => $id),
+			'fields' => array(
+				'User.first_name',
+				'User.last_name',
+				'Group.name',
+				'User.email',
+				'User.address'
+			)
+		);
+		$this->set('user', $this->User->find('first', $options));
+	}
+
+	public function setting() {
+		$id = $this->Session->read('Auth.User.id');
+		$options = array(
+			'conditions' => array('User.' .$this->User->primaryKey => $id),
+			'fields' => array(
+				'User.first_name',
+				'User.last_name',
+				'User.address',
+				'User.email',
+				'User.password'
+			)
+		);
 		$this->set('user', $this->User->find('first', $options));
 	}
 
@@ -179,15 +223,15 @@ class UsersController extends AppController {
 
 		if($this->request->is('post')) {
 			if (!isset($this->Captcha))	{
-				$this->Captcha = $this->Components->load('Captcha'); //load it
+				$this->Captcha = $this->Components->load('Captcha'); // load it
 			}
 
-			$this->User->setCaptcha($this->Captcha->getVerCode()); //getting from component and passing to model to make proper validation check
+			$this->User->setCaptcha($this->Captcha->getVerCode()); // getting from component and passing to model to make proper validation check
 			$this->User->set($this->request->data);
 
 			if ($this->request->is('post')) {
 				if ($this->User->validates()) {
-					// after successfully validating user
+					// execute login process after successfully validating
 					if ($this->Auth->login()) {
 						$this->Session->setFlash(__('Welcome '.$this->Session->read('Auth.User.first_name').' '.$this->Session->read('Auth.User.last_name').'!'), 'flash/success');
 						$this->redirect($this->Auth->redirectUrl());

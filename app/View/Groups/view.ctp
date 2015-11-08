@@ -3,7 +3,7 @@
 
     <div class="panel-heading toggle">
 			<h3 class="panel-title toggle"  data-toggle="collapse" data-parent="#accordion1" data-target="#collapseOne">
-				<i class="glyphicon glyphicon-eye-open"></i>&nbsp; View User
+				<i class="glyphicon glyphicon-eye-open"></i>&nbsp; View Group
 			</h3>
     </div>
 
@@ -12,7 +12,7 @@
 
 				<div class="table-responsive">
 				<fieldset>
-				<legend><i class="glyphicon glyphicon-cog"></i> <?php echo __('Group Details'); ?></legend>
+				<legend><small><i class="glyphicon glyphicon-cog"></i> <?php echo __('Group Details'); ?></small></legend>
 	    		<div class="table-responsive">
 					<table class="table table-striped table-bordered table-hover">
 						<tbody>

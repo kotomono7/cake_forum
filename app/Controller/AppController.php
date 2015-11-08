@@ -39,7 +39,8 @@ class AppController extends Controller {
 				'Actions' => array('actionPath' => 'controllers')
 			)
 		),
-		'Session');
+		'Session'
+	);
 	public $helpers = array('Html', 'Form', 'Js', 'Session', 'Captcha');
 
 	public function beforeFilter() {
@@ -57,7 +58,7 @@ class AppController extends Controller {
 			'controller' => 'forums',
 			'action' => 'index'
 		);
-		$this->Auth->authError = __('You are not authorized to access this page!', 'flash/error');
+		$this->Auth->authError = ('You are not authorized to access this page!');
 
 		/** if (!$this->Auth->loggedIn()) {
      	$this->Auth->authError = false;

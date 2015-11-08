@@ -11,7 +11,7 @@
   		<div class="panel-body">
 
         <fieldset>
-  				<legend>Please, log in here...</legend>
+  				<legend><small>Please, log in here!</small></legend>
   				<div class="col-sm-3 col-md-3 col-lg-3">
   				<?php
   					echo $this->Form->create('User', array(

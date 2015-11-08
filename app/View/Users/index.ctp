@@ -22,7 +22,7 @@
 				<table class="table table-striped table-bordered table-hover">
 					<thead>
 						<tr>
-							<th><?php echo $this->Paginator->sort('id'); ?></th>
+							<th><?php echo $this->Paginator->sort('id', '#'); ?></th>
 							<th><?php echo $this->Paginator->sort('first_name', 'Full Name'); ?></th>
 							<th><?php echo $this->Paginator->sort('username'); ?></th>
 							<th><?php echo $this->Paginator->sort('group_id'); ?></th>

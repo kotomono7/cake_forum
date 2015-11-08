@@ -96,7 +96,7 @@
 							<?php
                 echo $this->Html->link(
                   $this->Html->tag('i', '&nbsp;', array('class' => 'glyphicon glyphicon-user')).
-                  __('My Profile'), array('controller' => 'users', 'action' => 'profile'),
+                  __('My Profile'), array('controller' => 'users', 'action' => 'profile', $this->Session->read('Auth.User.id')),
                   array('escape' => false)
                 );
               ?>

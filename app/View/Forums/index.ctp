@@ -14,10 +14,10 @@
 				<table class="table table-striped table-bordered table-hover">
 					<thead>
 						<tr>
-							<th colspan=2>Forum</th>
+							<th colspan="2">Forum</th>
 							<th>Topics</th>
 							<th>Posts</th>
-							<th>Activity</th>
+							<th>Last Activity</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -41,8 +41,8 @@
 										$post = $forum['Post'][0];
 										echo $this->Html->link($post['Topic']['name'],
 											array(
-												'controller'=>'topics',
-												'action'=>'view',
+												'controller' => 'topics',
+												'action' => 'view',
 												$post['Topic']['id']
 											)
 										);
@@ -51,8 +51,8 @@
 										echo ' by ';
 										echo $this->Html->link($post['User']['username'],
 											array(
-												'controller'=>'users',
-												'action'=>'profile',
+												'controller' => 'users',
+												'action' => 'profile',
 												$post['User']['id']
 											)
 										);
